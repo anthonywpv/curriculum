@@ -1,0 +1,169 @@
+body {
+  background-color: #f5f5f5;
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 40px;
+}
+
+/* Header y Section: Summary  */
+header {
+  text-align: center; /* Centra el título y el subtítulo */
+  padding-bottom: 20px;
+}
+
+header h1 {
+  margin-bottom: 4px; /* Reduce el espacio debajo del nombre */
+}
+
+header p {
+  color: #555; /* Le da un color más suave al texto secundario */
+  margin-top: 0;
+  font-size: 1.1rem;
+}
+
+#summary {
+  background-color: #e8e8e8; /* Mismo fondo que otras secciones para consistencia */
+  padding: 20px;
+  border-radius: 10px; /* Bordes redondeados consistentes */
+}
+
+#summary h2 {
+  color: #333;
+  border-bottom: 2px solid #ccc; /* Línea para separar el título del contenido */
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+#summary p {
+  line-height: 1.6; /* Mejora la legibilidad del texto */
+}
+
+
+/* Video */
+hr {
+  border: 0;
+  height: 1px;
+  background-color: #ccc; /* Estilo sutil para la línea horizontal */
+  margin: 40px 0;
+}
+
+figure {
+  margin: 20px 0 0 0; /* Elimina márgenes extraños y añade espacio arriba */
+  padding: 0;
+}
+
+figcaption {
+  text-align: center;
+  margin-top: 8px;
+  font-style: italic;
+  color: #666;
+}
+
+/* Section: Education  */
+#education {
+  background-color: #e8e8e8; /* Mismo fondo que otras secciones */
+  padding: 20px;
+  border-radius: 10px;     /* Bordes redondeados consistentes */
+}
+
+#education h2 {
+  color: #333;
+  border-bottom: 2px solid #ccc; /* Línea separadora como en Summary */
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+#education p {
+  font-weight: bold; /* Hacemos el texto del título un poco más prominente */
+  font-size: 1.1rem;
+  margin-bottom: 20px; /* Añadimos espacio entre el texto y el mapa */
+}
+
+#education iframe {
+    border-radius: 6px; /* Pequeño redondeo en las esquinas del mapa */
+}
+
+/* Section: Testimonials */
+#testimonials {
+  background-color: #e8e8e8;
+  padding: 20px;
+  margin: 40px;
+  border-radius: 10px;
+
+  display: flex;           
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+#testimonials h2 {
+  color: #333;
+  text-align: center;
+  width: 100%
+  
+}
+
+#testimonials article {
+  background-color: #f5f5f5;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  flex: 1;
+}
+
+#testimonials h3 {
+  margin-top: 0;
+  color: #555;
+}
+
+#testimonials p {
+  font-style: italic;
+}
+
+
+/* Section: Contact */
+#contact {
+  background-color: #e8e8e8;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+}
+
+#contact h2 {
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+input, select, textarea, button {
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 10px;
+}
