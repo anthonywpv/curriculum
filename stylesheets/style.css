@@ -4,6 +4,12 @@ body {
   margin: 40px;
 }
 
+/* Anchura de la web */
+.container {
+  max-width: 960px; 
+  margin: 0 auto;   
+}
+
 /* Header y Section: Summary  */
 header {
   text-align: center; /* Centra el título y el subtítulo */
@@ -82,44 +88,231 @@ figcaption {
     border-radius: 6px; /* Pequeño redondeo en las esquinas del mapa */
 }
 
-/* Section: Testimonials */
+/* Section: Certifications */
+#certifications {
+  background-color: #e8e8e8; 
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#certifications h2 {
+  color: #333;
+  border-bottom: 2px solid #ccc; 
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+#certifications table {
+  width: 100%;                 
+  border-collapse: collapse;     
+  background-color: #f5f5f5;    
+  border-radius: 6px;             
+  overflow: hidden;               
+}
+
+#certifications th, #certifications td {
+  padding: 12px 15px;             
+  text-align: left;               
+  border-bottom: 1px solid #ddd;  
+}
+
+/* Remove bottom border from the last row */
+#certifications tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+#certifications th {
+  background-color: #dcdcdc;     
+  font-weight: bold;
+}
+
+#certifications a {
+  color: #3366cc;                
+  text-decoration: none;          
+  font-weight: bold;
+}
+
+#certifications a:hover {
+  text-decoration: underline;     
+}
+
+/* --- Section: Projects --- */
+#projects {
+  background-color: #e8e8e8; /* Fondo de sección consistente */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#projects h2 {
+  color: #333;
+  border-bottom: 2px solid #ccc; /* Estilo de título consistente */
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+#projects ul {
+  list-style-type: disc; /* Asegura que se vean los puntos de la lista */
+  padding-left: 20px;    /* Añade una sangría para que la lista no esté pegada al borde */
+  margin-top: 0;
+}
+
+#projects li {
+  margin-bottom: 15px;   /* Crea un espacio vertical entre cada proyecto */
+  line-height: 1.6;      /* Mejora la legibilidad de la descripción */
+}
+
+/* El <strong> en tu HTML ya pone el título en negrita */
+#projects a {
+  color: #3366cc;         /* Mismo color azul de los links de certificaciones */
+  text-decoration: none;  /* Quita el subrayado por defecto */
+}
+
+#projects a:hover {
+  text-decoration: underline; /* Agrega el subrayado solo al pasar el mouse */
+}
+
+/* --- Section: Experience --- */
+#experience {
+  background-color: #e8e8e8;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#experience h2 {
+  color: #333;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+/* ESPOLTECH */
+#experience h2 + p {
+  font-size: 1.2rem;
+  margin-bottom: 5px; 
+}
+
+#experience h2 + p + p {
+  color: #666;
+  font-style: italic;
+  margin-top: 0;
+  margin-bottom: 20px; 
+}
+
+#experience ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 0;
+}
+
+#experience li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* This removes the bottom margin from the last bullet point for cleaner spacing */
+#experience li:last-child {
+  margin-bottom: 0;
+}
+
+
+  /*  Section: Testimonials  */
 #testimonials {
   background-color: #e8e8e8;
   padding: 20px;
-  margin: 40px;
   border-radius: 10px;
 
-  display: flex;           
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
+  /* Grid */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
+}
+
+/* Hacemos que el título y el párrafo de intro ocupen todo el ancho */
+#testimonials h2, #testimonials > p {
+  grid-column: 1 / -1; /* Ocupa desde la primera a la última columna */
 }
 
 #testimonials h2 {
   color: #333;
-  text-align: center;
-  width: 100%
-  
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
+/* El párrafo introductorio */
+#testimonials > p {
+    margin-bottom: 10px;
+}
+
+/* Cada tarjeta de testimonio individual */
 #testimonials article {
   background-color: #f5f5f5;
-  padding: 15px;
-  margin-bottom: 15px;
-  border-radius: 6px;
-  flex: 1;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra sutil para efecto flotante */
 }
 
 #testimonials h3 {
   margin-top: 0;
-  color: #555;
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 1.1rem;
 }
 
-#testimonials p {
+#testimonials article p {
   font-style: italic;
+  color: #555;
+  margin-bottom: 0;
+  line-height: 1.6;
 }
 
+/* Section: Socials  */
+#socials {
+  text-align: center; /* Centramos todo el contenido de la sección */
+  background-color: #e8e8e8;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#socials h2 {
+  color: #333;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
+  /* Quitamos el margen inferior para que esté más cerca de los íconos */
+  margin-bottom: 25px; 
+}
+
+/* Contenedor de los enlaces */
+.social-links {
+  display: flex;         /* Usamos flexbox para alinear los enlaces */
+  justify-content: center; /* Centra los enlaces horizontalmente */
+  flex-wrap: wrap;         /* Si no caben, se van a la siguiente línea */
+  gap: 20px;             /* Espacio entre los enlaces */
+}
+
+.social-links a {
+  color: #f5f5f5;              /* Color del texto e ícono */
+  background-color: #333;    /* Fondo oscuro para los botones */
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  display: inline-flex;      /* Permite alinear el ícono y el texto */
+  align-items: center;       /* Centra verticalmente el ícono y el texto */
+  transition: transform 0.2s; /* Animación suave al pasar el mouse */
+}
+
+.social-links a:hover {
+  background-color: #555;   /* Oscurece un poco el fondo al pasar el mouse */
+  transform: translateY(-3px); /* Efecto de "levantar" el botón */
+}
+
+/* El ícono dentro del enlace */
+.social-links i {
+  margin-right: 10px;  /* Espacio entre el ícono y el texto */
+  font-size: 1.5rem;   /* Hacemos el ícono un poco más grande que el texto */
+}
 
 /* Section: Contact */
 #contact {
