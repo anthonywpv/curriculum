@@ -5,19 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Anthony Walter Paredes Vega - CV</title>
 <link rel="stylesheet" href="stylesheets/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
-
+    <main class="container">
   <header>
     <h1>Anthony Walter Paredes Vega</h1>
     <p>anthpare@espol.edu.ec | ENG & ESP</p>
   </header>
   <hr>
 
-  <section id="summary">
+<section id="summary">
     <h2>Summary</h2>
-    <p>I'm passionate about using AI to drive sustainability through data-efficient machine learning and autonomous systems. My goal is to leave an impact greater than what I could achieve alone by partnering with people and organizations that empower others. I believe teamwork is key to meaningful change.</p>
-  </section>
+    <p>I'm passionate about using AI to drive sustainability through data-efficient machine learning and autonomous systems. My goal is to leave an impact greater than what I could achieve alone by partnering with people and organizations that empower others. I believe teamwork is key to meaningful change. </p>
+    <p>I love listening to music. Every month, I will update this section with the most listened to song of the month.</p>
+    
     <figure>
       <iframe 
         width="100%" 
@@ -36,6 +38,7 @@
   <section id="education">
     <h2>Education</h2>
     <p>Bachelor of Engineering (B.E) in Artificial Intelligence and Data Science, ESPOL, 2024-2028</p>
+    <td><a href="https://www.fiec.espol.edu.ec/es/carreras-de-grado/ciencia-de-datos-e-inteligencia-artificial-hibrida" target="_blank">Link</a></td>
     <figure>
       <iframe 
         src="https://www.google.com/maps/d/embed?mid=1UBvIU63lnyja8u4ufFiVlIoO0NvSpJll&ehbc=2E312F" 
@@ -122,71 +125,47 @@
   </article>
 </section>
   <hr>
-
-  <section id="socials">
-    <h2>Socials</h2>
-    <p>
-      <a href="https://www.linkedin.com/in/anthony-paredes-7019012a9/" target="_blank">LinkedIn</a><br>
-      <a href="https://github.com/anthonywpv" target="_blank">GitHub</a><br>
-      <a href="https://www.facebook.com/anthony.paredesvega.3" target="_blank">Facebook</a>
-    </p>
-  </section>
-  <hr>
+<section id="socials">
+  <h2>Socials</h2>
+  <div class="social-links">
+    <a href="https://www.linkedin.com/in/anthony-paredes-7019012a9/" target="_blank">
+      <i class="fa-brands fa-linkedin"></i> LinkedIn
+    </a>
+    <a href="https://github.com/anthonywpv" target="_blank">
+      <i class="fa-brands fa-github"></i> GitHub
+    </a>
+    <a href="https://www.facebook.com/anthony.paredesvega.3" target="_blank">
+      <i class="fa-brands fa-facebook"></i> Facebook
+    </a>
+  </div>
+</section>
+<hr>
 
 <section id="contact">
   <h2>Contact Me</h2>
-  <p>If you'd like to collaborate, recruit, or ask a question, please fill out the form below.</p>
+  <p>Have a question or want to work together? Leave your details below and I'll get back to you as soon as possible.</p>
+  
+  <form action="#" method="POST">
+    <label for="name">Your Name</label>
+    <input type="text" id="name" name="name" required placeholder="e.g., Jane Smith">
 
-  <form action="https://example.com/submit-form" method="post">
-    <!-- Name -->
-    <label for="fullName">Full Name:</label>
-    <input type="text" id="fullName" name="user_name" required>
+    <label for="email">Your Email</label>
+    <input type="email" id="email" name="email" required placeholder="e.g., email@example.com">
 
-    <!-- Inquiry Type -->
-    <label for="reason">Inquiry Type:</label>
-    <select id="reason" name="inquiry_reason" required>
-      <option value="">Select an option</option>
-      <option value="recruiting">Recruiting Inquiry</option>
-      <option value="collaboration">Project Collaboration</option>
-      <option value="question">General Question</option>
-    </select>
+    <label for="subject">Subject</label>
+    <input type="text" id="subject" name="subject" required>
 
-    <!-- Contact Method -->
-    <fieldset>
-      <legend>Preferred Contact Method</legend>
-      <label>
-        <input type="radio" name="contact_method" value="email" checked>
-        Email
-      </label>
-      <input type="email" id="userEmail" name="user_email" placeholder="your@email.com">
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="6" required placeholder="Your message here..."></textarea>
 
-      <label>
-        <input type="radio" name="contact_method" value="phone">
-        Phone
-      </label>
-      <input type="tel" id="userPhone" name="user_phone" placeholder="+00 000 0000">
-    </fieldset>
-
-    <!-- Skills -->
-    <fieldset>
-      <legend>Skills of Interest</legend>
-      <label><input type="checkbox" name="skills_interest" value="ai"> Artificial Intelligence</label><br>
-      <label><input type="checkbox" name="skills_interest" value="data_science"> Data Science</label><br>
-      <label><input type="checkbox" name="skills_interest" value="machine_learning"> Machine Learning</label>
-    </fieldset>
-
-    <!-- Message -->
-    <label for="message">Message:</label>
-    <textarea id="message" name="user_message" rows="6" required placeholder="Write your message here..."></textarea>
-
-    <!-- Submit -->
     <button type="submit">Send Message</button>
   </form>
 </section>
+
 <hr>
   <footer>
     <p>© Anthony Paredes 2025</p>
   </footer>
-
+    </main>
 </body>
 </html>
